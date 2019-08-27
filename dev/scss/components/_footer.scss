@@ -1,0 +1,32 @@
+footer.main-footer {
+    background: darken($color: $color-primary, $amount: 20%);
+    color: #ffffff;
+    font-size: 0.9em;
+    padding: 1rem 0rem;
+    ul {
+        li {
+            a {
+                display: block;
+                color: #ffffff;
+                padding: 0px 0.6rem;
+                text-transform: uppercase;
+                font-size: 0.8em;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+
+    @include respond-to(handhelds) {
+        .flex {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            ul.flex {
+                flex-direction: row;
+                padding-top: 1rem;
+            }
+        }
+    }
+}

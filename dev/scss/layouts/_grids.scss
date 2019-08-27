@@ -1,0 +1,42 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    &--small {
+        max-width: 750px;
+    }
+}
+
+@import 'flexbox';
+
+.items {
+    margin-left: -($e * 2);
+    margin-right: -($e * 2);
+}
+
+.items>[class^=item-] {
+    padding: 0 ($e * 2);
+}
+
+@mixin columns($col) {
+    flex: 0 0 calc(100% / (12/#{$col}));
+    max-width: calc(100% / (12/#{$col}));
+}
+
+.item-auto  {
+    flex: 1 1 auto; 
+}
+
+.item-1     { @include columns(1);}
+.item-2     { @include columns(2);}
+.item-3     { @include columns(3);}
+.item-4     { @include columns(4);}
+.item-5     { @include columns(5);}
+.item-6     { @include columns(6);} 
+.item-7     { @include columns(7);} 
+.item-8     { @include columns(8);} 
+.item-9     { @include columns(9);} 
+.item-10    { @include columns(10);} 
+.item-11    { @include columns(11);} 
+.item-12    { @include columns(12);} 
+
+.block { display: block;}

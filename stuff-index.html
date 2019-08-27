@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="robots" content="index,nofollow" />
+    <meta name="copyright" content="Copyright © 2015" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google" content="notranslate" />
+    <title>idut - dashboard</title>
+
+    <meta name="keywords"       content="#" />
+    <meta name="url"            content="#" />
+    <meta name="description"    content="#" />
+
+    <meta name="twitter:card" content="app">
+    <meta name="twitter:site" content="@username" />
+    <meta name="twitter:creator" content="@username" />
+    <meta name="twitter:url" content="#">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="">
+
+
+    <meta property="og:url" content="#" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="#" />
+    <meta property="og:description" content="#." />
+    <meta name="author"         content="#">
+    <meta name="csrf-token"     content="#" />
+    <meta name="image:Logo"     content="../dist/images/fav/apple-icon-144x144.png"/>
+    <meta property="og:image"   content=""/>
+
+    <link rel="canonical" href="" />    
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../dist/images/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../dist/images/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../dist/images/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../dist/images/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../dist/images/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../dist/images/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../dist/images/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../dist/images/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../dist/images/fav/apple-icon-180x180.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../dist/images/fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+</head>
+
+<body class="body-blobal">
+
+    <!-- global header -->
+    <header class="global-header">
+        <div class="container">
+            <div class="global-header__inner flex items-center content-between">
+                
+                <!-- logo -->
+                <div class="main-logo">
+                    <a href="" class="logo">
+                        <img src="dist/images/logo.png" alt="">
+                    </a>
+                </div>
+                <!-- end -->
+
+                <!-- menu navigation -->
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="stuff-index.html" class="active">Kelola Barang</a></li>
+                        <li><a href="production-index.html">Kebutuhan Produksi</a></li>
+                        <li><a href="request-index.html">Permintaan Barang</a></li>
+                        <li class="tree">
+                            <a href="#">Transaksi</a>
+                            <i class="zmdi zmdi-chevron-down"></i>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- end menu navigation -->
+
+                <!-- account -->
+                <div class="box-account flex items-center">  
+                    <div class="box-account__content">
+                        <a href="#" class="link toggle">Admin</a>
+                    </div>
+
+                    <a href="#" class="toggle">
+                        <figure class="avatar avatar--small">
+                            <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="" class="img-cover">
+                        </figure>
+                    </a>
+
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#" class="link">Logout</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- end account -->
+
+            </div>
+        </div>
+    </header>
+    <!-- end global header -->
+
+    <main class="main-page">
+            <div class="container">
+    
+                <!-- header page -->
+                <header class="header-page">
+                    <div class="items">
+                        <div class="item-12 flex warp items-center content-between">
+                            <h1>Kelola Barang</h1>
+                            <div class="header-page__cta">
+                                <a href="stuff-add.html" class="btn-primary">TAMBAH BARANG</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- end header page -->
+
+                <section class="main-content">
+                    <div class="items flex">
+                        <div class="item-12">
+                           <div class="box p-0">
+                               <div class="box-table">
+                                   <table class="table">
+                                       <thead>
+                                           <tr>
+                                               <th class="no">No.</th>
+                                               <th>Kode Barang</th>
+                                               <th>Nama Barang</th>
+                                               <th>Satuan</th>
+                                               <th>Stok</th>
+                                               <th>Terakhir diubah</th>
+                                               <th class="action">Aksi</th>
+                                           </tr>
+                                       </thead>
+                                       <tbody>
+                                           <tr>
+                                               <td>1.</td>
+                                               <td>C0129</td>
+                                               <td>Cadura</td>
+                                               <td>Pcs</td>
+                                               <td>50</td>
+                                               <td>15 April 2019</td>
+                                               <td>
+                                                   <a href="stuff-edit.html" class="btn-default btn--small">UBAH</a>
+                                                   <a href="#" class="btn-transparent btn--small">HAPUS</a>
+                                               </td>
+                                           </tr>
+                                           
+                                           <tr>
+                                               <td>1.</td>
+                                               <td>C0129</td>
+                                               <td>Cadura</td>
+                                               <td>Pcs</td>
+                                               <td>50</td>
+                                               <td>15 April 2019</td>
+                                               <td>
+                                                   <a href="stuff-edit.html" class="btn-default btn--small">UBAH</a>
+                                                   <a href="#" class="btn-transparent btn--small">HAPUS</a>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td>1.</td>
+                                               <td>C0129</td>
+                                               <td>Cadura</td>
+                                               <td>Pcs</td>
+                                               <td>50</td>
+                                               <td>15 April 2019</td>
+                                               <td>
+                                                   <a href="stuff-edit.html" class="btn-default btn--small">UBAH</a>
+                                                   <a href="#" class="btn-transparent btn--small">HAPUS</a>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td>1.</td>
+                                               <td>C0129</td>
+                                               <td>Cadura</td>
+                                               <td>Pcs</td>
+                                               <td>50</td>
+                                               <td>15 April 2019</td>
+                                               <td>
+                                                   <a href="stuff-edit.html" class="btn-default btn--small">UBAH</a>
+                                                   <a href="#" class="btn-transparent btn--small">HAPUS</a>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td>1.</td>
+                                               <td>C0129</td>
+                                               <td>Cadura</td>
+                                               <td>Pcs</td>
+                                               <td>50</td>
+                                               <td>15 April 2019</td>
+                                               <td>
+                                                   <a href="stuff-edit.html" class="btn-default btn--small">UBAH</a>
+                                                   <a href="#" class="btn-transparent btn--small">HAPUS</a>
+                                               </td>
+                                           </tr>
+
+                                       </tbody>
+                                   </table>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+    
+</body> 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="dist/js/main.js"></script>
+</html>  
+

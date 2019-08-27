@@ -1,0 +1,89 @@
+.box-table {
+
+    .box-table__header {
+        border-bottom: 1px solid $color-border;
+        padding-bottom: $e * 3;
+        margin-bottom: $e * 3;
+
+        .action {
+            > * {
+                margin-left: $e * 1;
+            }
+
+            .search {
+                position: relative;
+                width: 100%;
+                max-width: 400px;
+                #btn-search {
+                    position: absolute;
+                    right: 1px;
+                    top: 1px;
+                } 
+            }
+
+            span {
+                margin:($e * 0) ($e * 2);
+            }
+        }
+    }
+
+    .box-table__body {
+
+        table.table {
+            width: 100%;
+            border-collapse: collapse;
+            thead {
+                tr {
+                    width: 100%;
+                    padding:$e * 1;
+                    display: table-row;
+                }
+                th {
+                    display: table-cell;
+                    text-align: left;
+                    padding: $e * 1 $e * 1 ;
+                }
+            }
+
+            tbody {
+                tr {
+                     
+                    width: 100%;
+                    padding: 0 $e * 1;
+                    display: table-row;
+                    transition: all 0.2s ease-in-out;
+                    position: relative;
+                    
+                    td { 
+                        display: table-cell;
+                        padding: $e * 1 ;
+                        border-bottom: 1px solid #E3EBF5;
+                        font-size: 12px;
+                        position: relative;
+                        &.td-action { 
+                            width: $e * 3;
+                        }
+
+                        &.td-button {
+                            max-width: 100px;
+                            a {
+                                margin: $e * 1 0;
+                                min-width: 70px;
+                                display: inline-block;
+                                float: right;
+                            }
+                        }
+                    }
+                    &:hover {
+                        background: #fbfcff;
+                        box-shadow: inset 0px 0px 1px 0px #a6c3e2, 
+                                    0px 4px 7px 0px rgba(206, 226, 249, 0.431);
+                        z-index: 2;
+                       
+                    }
+                }
+            }
+        }
+    }
+
+}

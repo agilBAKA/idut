@@ -1,0 +1,89 @@
+nav.main-menu {
+    flex-grow: 1;
+    padding-left: 50px;
+    ul {
+        display: flex;
+        li {
+            &.tree {
+                position: relative;
+                i {
+                    font-size: 1.5em; 
+                    position: absolute;
+                    top: -0px;
+                    right: -5px;
+                }
+                &:hover {
+                    i {
+                        color: $color-primary
+                    }
+                }
+            }
+            a {
+                padding: ($e * 1) ($e * 2);
+                color: $color-grey;
+                &.active {
+                    color: $color-dark;
+                    font-weight: 600;
+                    border-color: $color-primary;
+                    position: relative;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -15px;
+                        width: 100%;
+                        height: 3px;
+                        background-color: $color-primary;
+                    }
+                }
+                &:hover {
+                    color: $color-primary;
+                }
+
+            }
+        }
+    }
+}
+
+
+.menu {
+    ul {
+        li {
+            a {
+                display: block;
+                padding:$e;
+                color: $color-base;
+                border-radius: 4px;
+                &:hover {
+                    color: $color-primary;
+                }
+                &.active {
+                    color: #ffffff;
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+
+.submenu {
+    margin: -($e * 4) 0 ($e * 4) 0;
+    background-color: rgba(162, 206, 255, 0.05);
+    border-top: 1px solid #d6eaff;
+    border-bottom: 1px solid rgba(206,226,249,0.431);
+    ul {
+        padding-left: 207px;
+        li {
+            a {
+                display: block;
+                color: $color-base;
+                padding: $e * 2;
+                &.active {
+                    color: $color-dark;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+	&:focus {
+		outline: none;
+	}
+}
+
+body {
+	background: $color-soft;
+	font-family: $font-base;
+	font-size:14px;
+	line-height: 1.4;
+	color: $color-base; 
+	font-weight: 400;
+	padding-bottom: $e * 4;
+}
+
+a, button {
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+}
+
+a.link {
+	color: $color-primary;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+.font-small { font-size: 11px};
+.color-grey { color: #9B9B9B }
+
+.space-section {
+	margin-bottom: $e * 4;
+}
+
+hr {
+	opacity: 0.1;
+}
+
+.html-content {
+	* {
+		margin-bottom: 2rem;
+		padding-bottom: 0 !important;
+	}
+	p {
+		line-height: 1.8;
+	}
+}
+
+.box-alphabet {
+	display: none;
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		background-color: #fff;
+		li {
+			flex: 0 0 20%;
+			max-width: 20%;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 0.85em;
+			transition: all 0.3s ease-in-out;
+			
+			cursor: pointer;
+			&:hover {
+				background-color: lighten($color: $color-border, $amount: 5)
+			}
+			&.is-selected {
+				background-color: $color-dark;
+				color: #fff;
+			}
+		}
+	}
+
+	&.is-show {
+		display: block;
+	}
+}
+ 
+// space
+
+.m-r-1 { margin-right: $e}
+.m-r-2 { margin-right: $e * 2}
+
+.p-0 {
+	padding: 0px !important
+}
+
+.box-table {
+	
+	table.table {
+		width: 100%;
+		border-collapse: collapse;
+		thead {
+			th {
+				background-color: #E5EAF4;
+				font-size: 12px;
+				text-align: left;
+				padding: 16px 12px
+			}
+		}
+
+		td, th {
+			padding: 16px 12px;
+		}
+
+		th.action {
+			width: 180px;
+			text-align: center
+		}
+
+		tbody {
+			tr:nth-of-type(even) {
+				td {
+					background-color: #f4f4fb
+				}
+			}
+			tr td a {
+				color: $color-dark
+			}
+		}
+
+	}
+}

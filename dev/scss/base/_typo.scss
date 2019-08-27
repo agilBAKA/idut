@@ -1,0 +1,33 @@
+.font-heading {
+    font-size: $e * 3;
+}
+
+.font-large {
+    font-size: $e * 2;
+    font-weight: 400;
+}
+
+.font-medium {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+h1 {
+	@extend .font-heading;
+	margin-bottom: $e;
+	font-weight: 400;
+	color: $color-dark;
+}
+
+
+.small-title {
+    text-transform: uppercase;
+    color: $color-dark;
+    letter-spacing: 1.8px;
+    font-size: 9px;
+    margin-bottom: $e;
+    display: block;
+    font-weight: 400;
+}

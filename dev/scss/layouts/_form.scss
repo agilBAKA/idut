@@ -1,0 +1,73 @@
+.field {
+    margin-bottom: $e * 2;
+    position: relative;
+    > label {
+        margin-top: $e;
+        display: block;
+    }
+
+    &--flex {
+        display: flex;
+        label {
+            min-width: 200px;
+        }
+    }
+}
+
+.field--icon-right {
+    .btn-icon-general {
+        position: absolute;
+        right: 0;
+        top: 1px;
+    }
+}
+
+.header-form {
+    padding-bottom: $e;
+    margin-bottom: $e * 3;
+    border-bottom: 1px solid $color-border;
+}
+
+.footer-form {
+    border-top: 1px solid $color-border;
+    padding-top: $e * 3;
+    a,button {
+        margin-left: $e * 2;
+    }
+}
+.field-style{
+    width: 100%;
+    height: $e * 4;
+    border-radius: $e / 2;
+    font-family: $font-base;
+    padding: $e * 2;
+    font-size: 1em;
+    font-weight: 400;
+    background: rgba(243, 245, 249, 0.22);
+    border: 1px solid #C4CAD3;
+    transition: all 0.3s ease-in-out;
+    &:focus {
+        border-color: $color-primary;
+    }
+    &:disabled {
+        background: #DDE3EF;
+        border: 1px solid #B2B9C7;
+        
+    }
+}
+
+textarea.field-style {
+    min-height: 200px;
+    resize: none;
+}
+
+
+input::placeholder {
+    color: lighten($color: $color-dark, $amount: 55);
+    font-weight: normal;
+    font-size: 11px;
+}
+
+@import 'form/radio',
+        'form/checkbox',
+        'form/imgupload';

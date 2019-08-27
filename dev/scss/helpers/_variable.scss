@@ -1,0 +1,32 @@
+$color-base : #484A4E;
+$color-soft	: #F7F9FD;
+
+$color-primary		: #007AFF;
+$color-secondary	: #4587F9;
+$color-dark	        : #3A445E;
+$color-grey	        : #5C5959;
+$color-border       : lighten($color: $color-primary, $amount: 42);
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+// 
+$font-base	: 'Roboto', sans-serif;
+$font-heading :'Roboto', sans-serif;
+
+// calc 
+$e : 0.571rem;
+
+$break-small: 480px;
+$break-large: 1024px;
+
+@mixin respond-to($media) {
+    @if $media == handhelds {
+        @media only screen and (max-width: $break-small) { @content; }
+    }
+    @else if $media == medium-screens {
+        @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+    }
+    @else if $media == wide-screens {
+        @media only screen and (min-width: $break-large) { @content; }
+    }
+}
