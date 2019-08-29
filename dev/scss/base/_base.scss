@@ -112,11 +112,19 @@ hr {
 		td, th {
 			padding: 16px 12px;
 		}
-
+		th.no {
+			width: 50px
+		}
 		th.action {
 			width: 180px;
 			text-align: center
 		}
+		
+		th.action-2 {
+			width: 260px;
+			text-align: center
+		}
+
 
 		tbody {
 			tr:nth-of-type(even) {
@@ -129,5 +137,20 @@ hr {
 			}
 		}
 
+	}
+}
+
+.table-search {
+	position: relative;
+	margin-right: 16px;
+	i {
+		position: absolute;
+		left: 16px;
+		top: 10px;
+		font-size: 1.4em
+	}
+	input {
+		background-color: #fff;
+		padding-left: 40px;
 	}
 }

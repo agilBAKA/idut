@@ -76,10 +76,7 @@
                         <li><a href="stuff-index.html">Kelola Barang</a></li>
                         <li><a href="production-index.html" class="active">Kebutuhan Produksi</a></li>
                         <li><a href="request-index.html">Permintaan Barang</a></li>
-                        <li class="tree">
-                            <a href="#">Transaksi</a>
-                            <i class="zmdi zmdi-chevron-down"></i>
-                        </li>
+                         
                     </ul>
                 </nav>
                 <!-- end menu navigation -->
@@ -111,31 +108,83 @@
     <!-- end global header -->
 
     <main class="main-page">
-            <div class="container">
-    
-                <!-- header page -->
-                <header class="header-page space-section">
-                    <div class="items">
-                        <div class="item-12 flex warp items-center content-between">
-                            <h1>Kebutuhan Produksi</h1>
-                            <div class="header-page__cta">
-                                <!-- cta here -->
+        <div class="container">
+
+            <!-- header page -->
+            <header class="header-page">
+                <div class="items">
+                    <div class="item-12 flex warp items-center content-between">
+                        <h1>Kebutuhan Produksi</h1>
+                        <div class="header-page__cta flex items-center">
+                            <div class="table-search">
+                                <i class="zmdi zmdi-search"></i>
+                                <input type="text" placeholder="Cari Produksi" class="field-style">
+                            </div>
+                            <a href="production-add.html" class="btn-primary">TAMBAH DATA</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end header page -->
+
+            <section class="main-content">
+                <div class="items flex">
+                    <div class="item-12">
+                        <div class="box p-0">
+                            <div class="box-table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="no">No.</th>
+                                            <th>Kode Barang</th>
+                                            <th>Nama Barang</th>
+                                            <th class="action action-2">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>C0129</td>
+                                            <td>Cadura</td>
+                                            <td>
+                                                <a href="production-detail.html" class="btn-default btn--small">DETAIL</a>
+                                                <a href="production-edit.html" class="btn-default btn--small">UBAH</a>
+                                                <a href="#" class="btn-transparent btn--small">HAPUS</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>C0129</td>
+                                            <td>Cadura</td>
+                                            <td>
+                                                <a href="production-detail.html" class="btn-default btn--small">DETAIL</a>
+                                                <a href="production-edit.html" class="btn-default btn--small">UBAH</a>
+                                                <a href="#" class="btn-transparent btn--small">HAPUS</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>C0129</td>
+                                            <td>Cadura</td>
+                                            <td>
+                                                <a href="production-detail.html" class="btn-default btn--small">DETAIL</a>
+                                                <a href="production-edit.html" class="btn-default btn--small">UBAH</a>
+                                                <a href="#" class="btn-transparent btn--small">HAPUS</a>
+                                            </td>
+                                        </tr>
+                                           
+                                        
+
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                </header>
-                <!-- end header page -->
-
-                <section class="main-content">
-                    <div class="items flex">
-                        <div class="item-12">
-                            start here
-                        </div>
-                    </div>
-                </section>
-                
-            </div>
-        </main>
+                </div>
+            </section>
+            
+        </div>
+    </main>
     
 </body> 
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
